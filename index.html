@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasienis</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        iframe {
+            /* width: 580px;
+    height: 650px; */
+            border: 2px solid red
+        }
+
+        body {
+            display: flex;
+            max-width: 1200px;
+            justify-content: space-between;
+            background-color: lightgray;
+
+        }
+
+        div {
+            text-align: center;
+            /* border: 2px solid black; */
+        }
+
+        .kotlovka .sumsk {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .pirmas {
+            margin-top: 50px;
+        }
+
+        .website {
+            border: 3px solid rgb(201, 0, 1);
+            overflow: hidden;
+            margin: 15px auto;
+            max-width: 630px;
+        }
+
+        .website iframe {
+            border: 0px none;
+            margin-left: -31px;
+            height: 1100px;
+            margin-top: -585px;
+            width: 926px;
+        }
+
+        .pirmasiframe {
+            max-width: 630px;
+            margin: 15px auto;
+
+        }
+
+        .pirmasiframe iframe {
+            height: 620px;
+
+            width: 630px;
+
+        }
+
+        @media (max-width:800px) {
+            body {
+                flex-direction: column;
+            }
+
+            .website {
+                width: 630px
+            }
+
+            .website iframe {
+                margin-top: -700px;
+                width: 570px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sumsk">
+        <h2>Шумск ЛТ</h2>
+        <div class="pirmasiframe">
+            <iframe src="https://frame.pkpd.lt/lt/border/stream/checkpoint.sumskas/video.sumskas" title="sumskas"
+                frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class='website'>
+            <iframe scrolling="no" src="https://www.tuda-suda.by/poleznyashki/borders/lietuva/losha">
+            </iframe>
+        </div>
+
+    </div>
+
+    <div class="kotlovka">
+        <h2>Катловка ЛТ</h2>
+        <div class="pirmasiframe">
+            <iframe src="https://frame.pkpd.lt/lt/border/stream/checkpoint.lavoriskes/video.lavoriskes" title="sumskas"
+                frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class='website'>
+            <iframe scrolling="no" src="https://www.tuda-suda.by/poleznyashki/borders/lietuva/lavorishkes">
+            </iframe>
+        </div>
+
+        <div class='website'>
+            <iframe scrolling="no" src="https://www.tuda-suda.by/poleznyashki/borders/lietuva/kotlovka">
+            </iframe>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
